@@ -51,7 +51,7 @@ public class CalculatorActivity extends AppCompatActivity {
             String t1 = params[1];
             String t2 = params[2];
             try {
-                URL url = new URL("http://IP/name:8080/expr/expr_get.py?operation=" + operation + "&t1=" + t1 + "&t2=" + t2);
+                URL url = new URL("http://192.168.1.100:8080?operation=" + operation + "&t1=" + t1 + "&t2=" + t2);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("GET");
 
